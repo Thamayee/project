@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>VERITAS.AI Logo Animation</title>
+
+<style>
+
+body{
+    background:#6f6f6f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Arial;
+}
+
+.container{
+    position:relative;
+    text-align:center;
+}
+
+.text{
+    font-size:60px;
+    color:#b8ffff;
+    letter-spacing:5px;
+}
+
+.owl{
+    position:absolute;
+    top:-90px;
+    left:-120px;
+    width:120px;
+    animation:moveOwl 10s ease forwards;
+}
+
+@keyframes moveOwl{
+
+0%{
+left:-120px;
+}
+
+40%{
+left:80px;
+}
+
+70%{
+left:220px;
+}
+
+100%{
+left:300px; /* position above AI */
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="logo.png" class="owl">
+
+<div class="text">
+VERITAS.AI
+</div>
+
+</div>
+
+</body>
+</html>
